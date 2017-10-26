@@ -1,0 +1,27 @@
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+
+ .Search {
+  background: white;
+  color: white;
+  font-family: 'Roboto', helvetica, sans-serif;
+  padding: 120px;
+
+  /*padding-top: 60px;*/
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
