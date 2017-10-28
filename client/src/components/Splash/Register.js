@@ -35,6 +35,18 @@ import './register.css';
    
     render() {
 
+       const style4 = {
+
+         backgroundColor: '#99c5ff',
+          borderRadius: 5,
+          width: '98px',
+          textAlign: 'center',
+          padding: 5,
+          margin: 5,
+          color: 'white',
+          fontSize: 18, 
+      }
+
       
 
 
@@ -99,7 +111,7 @@ import './register.css';
                   onChange={this.handlePasswordChange}
                   /><br/>
 
-                <button>Sign up</button>
+                <button style={style4}>Sign up</button>
 
                <Link  style={savedStyle} to="/signin">Sign In</Link>
 

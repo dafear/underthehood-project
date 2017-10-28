@@ -3,6 +3,7 @@ import PlacesAutocomplete, { geocodeByAddress, geocodeByPlaceId, getLatLng } fro
 import {connect} from 'react-redux'
 import { Link } from 'react-router-dom'
 import { saveComment } from '../../actions'
+import './Comment.css';
 
 
 class AddComment extends Component {
@@ -27,14 +28,42 @@ class AddComment extends Component {
 
         input: {
           height: '100%',
-          width: '100%',
-          padding: '20px',
+          width: '80%',
+          padding: '30px',
+
         },
       }
 
        const style = {
         textAlign: 'center',
     }
+     const style2 = {
+        fontSize: '25px',
+        height: '50%',
+        width: '50%',
+
+
+    }
+     const styles3 = {
+        fontSize: '30px'
+      }
+
+       const style4 = {
+
+         backgroundColor: '#99c5ff',
+          borderRadius: 5,
+          width: '98px',
+          textAlign: 'center',
+          padding: 5,
+          margin: 5,
+          color: 'white',
+          fontSize: 18, 
+      }
+
+
+
+
+
 
 
       const inputProps = {
@@ -42,9 +71,10 @@ class AddComment extends Component {
         onChange: this.onChange,
       }
         return (
-          <div style={style}>
+          <div className="Comment" style={style}>
+            <h1>Enter Your Location</h1>
             <PlacesAutocomplete inputProps={inputProps}
-            styles={myStyles}
+            styles={myStyles} 
             onEnterKeyDown={(e) => this.handleSelect(props, e)}
              onSelect={(e) => this.handleSelect(props, e)}
             />
@@ -56,11 +86,15 @@ class AddComment extends Component {
               this.props.dispatch(saveComment(this.state.lat, this.state.lng, comment))
 
             }}>
-              <textarea  name="comment" rows="4" cols="50">
+
+            <h2 style={styles3}>Add Your Comment </h2>
+
+              <textarea 
+              style={style2} type="text" required placeholder="Enter Comment" name="comment">
 
 
               </textarea>
-                      /><br/><button type="submit">Submit</button>
+                      <br/><button style={style4} type="submit">Submit</button>
             </form>
 
           </div>

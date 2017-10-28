@@ -37,6 +37,18 @@ class SignIn extends Component {
 
     render() {
 
+       const style4 = {
+
+         backgroundColor: '#99c5ff',
+          borderRadius: 5,
+          width: '98px',
+          textAlign: 'center',
+          padding: 5,
+          margin: 5,
+          color: 'white',
+          fontSize: 18, 
+      }
+
 
     
 
@@ -95,7 +107,7 @@ class SignIn extends Component {
                   value={this.state.password}
                   onChange={this.handlePasswordChange}
                 /><br/>
-                <button>Sign In</button>
+                <button style={style4}>Sign In</button>
                 <p>{errorMessage}</p>
                 
               </form>

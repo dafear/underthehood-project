@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import {Map, InfoWindow, Marker} from 'google-maps-react';
 import {connect} from 'react-redux'
 import { onMapClick, onMapMarkerClick, fetchComments } from '../actions'
-// import './Map.css'
+import './App.css'
 
   export class GoogleMap extends Component {
 

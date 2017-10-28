@@ -7,8 +7,8 @@ html, body {
 
 
 
-.Signin {
-  background: white;
+.Comments {
+  background: #000000;
   color: white;
   font-family: 'Roboto', helvetica, sans-serif;
   padding: 0;
@@ -41,7 +41,24 @@ html, body {
  }
 
 
-
+::-webkit-input-placeholder {
+    
+    text-align: center;
+}
+:-moz-placeholder {
+    /* Firefox 18- */
+    
+    text-align: center;
+}
+::-moz-placeholder {
+    /* Firefox 19+ */
+    
+    text-align: center;
+}
+:-ms-input-placeholder {
+    
+    text-align: center;
+}
 
 /*input[type='text']
 button[type='submit'] {
@@ -109,7 +126,7 @@ height: auto;
 }*/
 
 
-   /*input[type=submit]:enabled,
+  /* input[type=submit]:enabled,
    button:enabled {
     color: white;
     font-weight: 500;
@@ -146,10 +163,10 @@ height: auto;
 
   }*/
 
-input {
+/*input {
   padding: 12px;
   margin-bottom: 1em;
-}
+}*/
 
 
 
@@ -157,11 +174,11 @@ input {
 
 
 
-.subtitle {
+/*.subtitle {
 
   margin: 0 5% 5% 5%;
 
-}
+}*/
 
 
 
@@ -236,7 +253,6 @@ p {
 
 
 
-
 /* ----------- iPhone 5 and 5S ----------- */
 
 /* Portrait and Landscape */
@@ -262,7 +278,9 @@ p {
         input {
         width: 100%;
        }
-   
+      ul {
+        width: 100%;
+      } 
 
 }
 
@@ -290,7 +308,9 @@ p {
       input {
        width: 100%;
      }
-     
+      ul {
+        width: 100%;
+      } 
 
 }
 
@@ -318,7 +338,9 @@ p {
       input {
         width: 100%;
      }
-   
+       ul {
+        width: 100%;
+      } 
 }
 
 
@@ -348,7 +370,10 @@ p {
                 input {
                width: 100%;
                }
-              
+
+           ul {
+             width: 100%;
+            } 
      }
 
 /* Portrait */
@@ -375,6 +400,9 @@ p {
       input {
       width: 100%;
      }
+       ul {
+        width: 100%;
+      } 
      
 }
 
@@ -402,7 +430,10 @@ p {
       input {
       width: 100%;
       }
-  
+        ul {
+        width: 100%;
+      } 
+    
 }
 
 
@@ -431,7 +462,7 @@ p {
       input {
       width: 100%;
      }
-     
+    
 }
 
 /* Portrait */
@@ -458,6 +489,9 @@ p {
       input {
        width: 100%;
      }
+       ul {
+        width: 100%;
+      } 
     
 }
 
@@ -485,7 +519,10 @@ p {
       input {
       width: 100%;
      }
-    
+       ul {
+        width: 100%;
+      } 
+     
 }
 
 
@@ -517,6 +554,9 @@ p {
       input {
       width: 100%;
      }
+       ul {
+        width: 100%;
+      } 
     
 }
 
@@ -544,6 +584,9 @@ p {
       input {
       width: 100%;
     }
+      ul {
+        width: 100%;
+      } 
    
 }
 
@@ -571,6 +614,9 @@ p {
       input {
       width: 100%;
      }
+       ul {
+        width: 100%;
+      } 
     
 }
 
@@ -600,6 +646,9 @@ p {
       input {
       width: 100%;
      }
+       ul {
+        width: 100%;
+      } 
      
 }
 
@@ -627,6 +676,9 @@ p {
       input {
       width: 100%;
      }
+       ul {
+        width: 100%;
+      } 
     
 }
 
@@ -654,6 +706,9 @@ p {
       input {
       width: 100%;
      }
+       ul {
+        width: 100%;
+      } 
     
 }
 
@@ -681,6 +736,9 @@ p {
       input {
       width: 100%;
      }
+       ul {
+        width: 100%;
+      } 
     
   }
 
@@ -708,6 +766,9 @@ p {
       input {
       width: 100%;
      }
+       ul {
+        width: 100%;
+      } 
     
 }
 
@@ -735,6 +796,9 @@ p {
       input {
       width: 100%;
      }
+       ul {
+        width: 100%;
+      } 
     
 }
 
@@ -762,6 +826,9 @@ p {
       input {
       width: 100%;
      }
+       ul {
+        width: 100%;
+      } 
 
 }
 
@@ -789,6 +856,9 @@ p {
       input {
       width: 100%;
      }
+       ul {
+        width: 100%;
+      } 
     
 }
 
@@ -816,5 +886,7 @@ p {
       input {
       width: 100%;
      }
-    
+      ul {
+        width: 100%;
+      } 
 }

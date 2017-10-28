@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import GoogleMap from './GoogleMap';
 import Search from './Search';
-import './App.css';
+// import './App.css';
  // import './Map.css';
 
 class App extends Component {

@@ -1,25 +1,609 @@
-.App {
-  text-align: center;
-  
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+html, body {
+    height: 100%;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+
+
+ 
+/* ----------- iPhone 5 and 5S ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+        body {
+        width: 100%;
+       }
+        div {
+        width: 100%;
+       }
+        button {
+        width: 100%;
+       }
+        h1 {
+        width: 100%;
+       }
+        p {
+        width: 100%;
+       }
+        input {
+        width: 100%;
+       }
+        html {
+        width: 100%;
+       }
+
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+/* Portrait */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+      body {
+      width: 100%;
+     }
+      div {
+      width: 100%;
+     }
+      button {
+      width: 100%;
+     }
+      h1 {
+      width: 100%;
+     }
+      p {
+      width: 100%;
+     }
+      input {
+       width: 100%;
+     }
+      html {
+      width: 100%;
+     }
+
 }
 
-.App-intro {
-  font-size: large;
+/* Landscape */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+       body {
+      width: 100%;
+     }
+      div {
+      width: 100%;
+     }
+      button {
+      width: 100%;
+     }
+      h1 {
+      width: 100%;
+     }
+      p {
+      width: 100%;
+     }
+      input {
+        width: 100%;
+     }
+      html {
+      width: 100%;
+     }
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+
+
+/* ----------- iPhone 6 ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+                body {
+                width: 100%;
+               }
+                div {
+                width: 100%;
+               }
+                button {
+                width: 100%
+               }
+                h1 {
+                width: 100%;
+               }
+                p {
+                width: 100%;
+               }
+                input {
+               width: 100%;
+               }
+                html {
+                width: 100%;
+               }
+     }
+
+/* Portrait */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+       body {
+      width: 100%;
+     }
+      div {
+      width: 100%;
+     }
+      button {
+      width: 100%;
+     }
+      h1 {
+      width: 100%;
+     }
+      p {
+      width: 100%;
+     }
+      input {
+      width: 100%;
+     }
+      html {
+        width: 100%;
+     }
+}
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+      body {
+      width: 100%;
+     }
+      div {
+      width: 100%;
+     }
+      button {
+      width: 100%;
+     }
+      h1 {
+      width: 100%;
+     }
+      p {
+      width: 100%;
+     }
+      input {
+      width: 100%;
+      }
+       html {
+      width: 100%;
+      }
+}
+
+
+/* ----------- iPhone 6+ ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3) {
+      body {
+      width: 100%;
+     }
+      div {
+      width: 100%;
+     }
+      button {
+      width: 100%;
+     }
+      h1 {
+      width: 100%;
+     }
+      p {
+      width: 100%;
+     }
+      input {
+      width: 100%;
+     }
+      html {
+       width: 100%;
+     }
+}
+
+/* Portrait */
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) {
+      body {
+      width: 100%;
+     }
+      div {
+      width: 100%;
+     }
+      button {
+      width: 100%;
+     }
+      h1 {
+      width: 100%;
+     }
+      p {
+      width: 100%;
+     }
+      input {
+       width: 100%;
+     }
+      html {
+      width: 100%;
+     }
+}
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) {
+       body {
+      width: 100%;
+     }
+      div {
+      width: 100%;
+     }
+      button {
+      width: 100%;
+     }
+      h1 {
+      width: 100%;
+     }
+      p {
+      width: 100%;
+     }
+      input {
+      width: 100%;
+     }
+      html {
+      width: 100%;
+      }
+}
+
+
+
+
+
+/* ----------- Galaxy S5 ----------- */
+
+/* Portrait and Landscape */
+@media screen
+  and (device-width: 360px)
+  and (device-height: 640px)
+  and (-webkit-device-pixel-ratio: 3) {
+      body {
+      width: 100%;
+     }
+      div {
+      width: 100%;
+     }
+      button {
+      width: 100%;
+     }
+      h1 {
+      width: 100%;
+     }
+      p {
+      width: 100%;
+     }
+      input {
+      width: 100%;
+     }
+    
+}
+
+/* Portrait */
+@media screen
+  and (device-width: 360px)
+  and (device-height: 640px)
+  and (-webkit-device-pixel-ratio: 3)
+  and (orientation: portrait) {
+       body {
+      width: 100%;
+     }
+      div {
+      width: 100%;
+     }
+      button {
+      width: 100%;
+     }
+      h1 {
+      width: 100%;
+     }
+      p {
+      width: 100%;
+     }
+      input {
+      width: 100%;
+    }
+   
+}
+
+/* Landscape */
+@media screen
+  and (device-width: 360px)
+  and (device-height: 640px)
+  and (-webkit-device-pixel-ratio: 3)
+  and (orientation: landscape) {
+      body {
+      width: 100%;
+     }
+      div {
+      width: 100%;
+     }
+      button {
+      width: 100%;
+     }
+      h1 {
+      width: 100%;
+     }
+      p {
+      width: 100%;
+     }
+      input {
+      width: 100%;
+     }
+    
+}
+
+
+/* ----------- iPad mini ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+      body {
+      width: 100%;
+     }
+      div {
+      width: 100%;
+     }
+      button {
+      width: 100%;
+     }
+      h1 {
+      width: 100%;
+     }
+      p {
+      width: 100%;
+     }
+      input {
+      width: 100%;
+     }
+     
+}
+
+/* Portrait */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: portrait)
+  and (-webkit-min-device-pixel-ratio: 1) {
+      body {
+      width: 100%;
+     }
+      div {
+      width: 100%;
+     }
+      button {
+      width: 100%;
+     }
+      h1 {
+      width: 100%;
+     }
+      p {
+      width: 100%;
+     }
+      input {
+      width: 100%;
+     }
+    
+}
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: landscape)
+  and (-webkit-min-device-pixel-ratio: 1) {
+      body {
+      width: 100%;
+     }
+      div {
+      width: 100%;
+     }
+      button {
+      width: 100%;
+     }
+      h1 {
+      width: 100%;
+     }
+      p {
+      width: 100%;
+     }
+      input {
+      width: 100%;
+     }
+    
+}
+
+/* ----------- iPad 1 and 2 ----------- */
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+      body {
+      width: 100%;
+     }
+      div {
+      width: 100%;
+     }
+      button {
+      width: 100%;
+     }
+      h1 {
+      width: 100%;
+     }
+      p {
+      width: 100%;
+     }
+      input {
+      width: 100%;
+     }
+    
+  }
+
+/* Portrait */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: portrait)
+  and (-webkit-min-device-pixel-ratio: 1) {
+      body {
+      width: 100%;
+     }
+      div {
+      width: 100%;
+     }
+      button {
+      width: 100%;
+     }
+      h1 {
+      width: 100%;
+     }
+      p {
+      width: 100%;
+     }
+      input {
+      width: 100%;
+     }
+    
+}
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: landscape)
+  and (-webkit-min-device-pixel-ratio: 1) {
+       body {
+      width: 100%;
+     }
+      div {
+      width: 100%;
+     }
+      button {
+      width: 100%;
+     }
+      h1 {
+      width: 100%;
+     }
+      p {
+      width: 100%;
+     }
+      input {
+      width: 100%;
+     }
+    
+}
+
+/* ----------- iPad 3 and 4 ----------- */
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+      body {
+      width: 100%;
+     }
+      div {
+      width: 100%;
+     }
+      button {
+      width: 100%;
+     }
+      h1 {
+      width: 100%;
+     }
+      p {
+      width: 100%;
+     }
+      input {
+      width: 100%;
+     }
+
+}
+
+/* Portrait */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: portrait)
+  and (-webkit-min-device-pixel-ratio: 2) {
+       body {
+      width: 100%;
+     }
+      div {
+      width: 100%;
+     }
+      button {
+      width: 100%;
+     }
+     h1 {
+      width: 100%;
+     }
+      p {
+      width: 100%;
+     }
+      input {
+      width: 100%;
+     }
+    
+}
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: landscape)
+  and (-webkit-min-device-pixel-ratio: 2) {
+      body {
+      width: 100%;
+     }
+      div {
+      width: 100%;
+     }
+      button {
+      width: 100%;
+     }
+      h1 {
+      width: 100%;
+     }
+      p {
+      width: 100%;
+     }
+      input {
+      width: 100%;
+     }
+    
 }

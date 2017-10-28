@@ -7,8 +7,8 @@ html, body {
 
 
 
-.Signin {
-  background: white;
+.Comment {
+  background: #000000;
   color: white;
   font-family: 'Roboto', helvetica, sans-serif;
   padding: 0;
@@ -41,7 +41,24 @@ html, body {
  }
 
 
-
+::-webkit-input-placeholder {
+    
+    text-align: center;
+}
+:-moz-placeholder {
+    /* Firefox 18- */
+    
+    text-align: center;
+}
+::-moz-placeholder {
+    /* Firefox 19+ */
+    
+    text-align: center;
+}
+:-ms-input-placeholder {
+    
+    text-align: center;
+}
 
 /*input[type='text']
 button[type='submit'] {
@@ -109,7 +126,7 @@ height: auto;
 }*/
 
 
-   /*input[type=submit]:enabled,
+  /* input[type=submit]:enabled,
    button:enabled {
     color: white;
     font-weight: 500;
@@ -146,10 +163,10 @@ height: auto;
 
   }*/
 
-input {
+/*input {
   padding: 12px;
   margin-bottom: 1em;
-}
+}*/
 
 
 
@@ -157,11 +174,11 @@ input {
 
 
 
-.subtitle {
+/*.subtitle {
 
   margin: 0 5% 5% 5%;
 
-}
+}*/
 
 
 
@@ -174,7 +191,7 @@ input {
 
 
 
-/*input[type=submit]:enabled,
+input[type=submit]:enabled,
 button:enabled {
   color: white;
   background: #000000;
@@ -189,9 +206,9 @@ button:enabled {
   padding: 10px;
   letter-spacing: 2px;
   margin-top: 12px;
-}*/
+}
 
-/*input[type=submit]:disabled,
+input[type=submit]:disabled,
 button:disabled {
 color: blue;
 background: #000000;
@@ -207,7 +224,7 @@ padding: 10px;
 letter-spacing: 2px;
 margin-top: 12px;
 }
-  */
+  
 
 
 input {
@@ -232,7 +249,6 @@ h1 {
 p {
   text-align: center;
 }
-
 
 
 
@@ -262,7 +278,9 @@ p {
         input {
         width: 100%;
        }
-   
+        html {
+        width: 100%;
+       }
 
 }
 
@@ -290,7 +308,9 @@ p {
       input {
        width: 100%;
      }
-     
+      html {
+      width: 100%;
+     }
 
 }
 
@@ -318,7 +338,9 @@ p {
       input {
         width: 100%;
      }
-   
+      html {
+      width: 100%;
+     }
 }
 
 
@@ -348,7 +370,9 @@ p {
                 input {
                width: 100%;
                }
-              
+                html {
+                width: 100%;
+               }
      }
 
 /* Portrait */
@@ -375,7 +399,9 @@ p {
       input {
       width: 100%;
      }
-     
+      html {
+        width: 100%;
+     }
 }
 
 /* Landscape */
@@ -402,7 +428,9 @@ p {
       input {
       width: 100%;
       }
-  
+       html {
+      width: 100%;
+      }
 }
 
 
@@ -431,7 +459,9 @@ p {
       input {
       width: 100%;
      }
-     
+      html {
+       width: 100%;
+     }
 }
 
 /* Portrait */
@@ -458,7 +488,9 @@ p {
       input {
        width: 100%;
      }
-    
+      html {
+      width: 100%;
+     }
 }
 
 /* Landscape */
@@ -485,7 +517,9 @@ p {
       input {
       width: 100%;
      }
-    
+      html {
+      width: 100%;
+      }
 }
 
 

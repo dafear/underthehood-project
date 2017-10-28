@@ -44,7 +44,7 @@ class Search extends Component {
         input: {
           height: '100%',
           width: '100%',
-          padding: '20px', 
+          padding:'20px', 
         },
 
       }
@@ -75,6 +75,18 @@ class Search extends Component {
           fontSize: 18, 
 
       };
+
+      const style4 = {
+
+         backgroundColor: '#99c5ff',
+          borderRadius: 10,
+          width: '98px',
+          textAlign: 'center',
+          padding: 10,
+          margin: 10,
+          color: 'white',
+          fontSize: 14, 
+      }
      
 
       const inputProps = {
@@ -92,7 +104,7 @@ class Search extends Component {
            onSelect={(e) => this.handleSelect(props, e)} 
           />
            <Link to='/comment'>
-                   <button type='text'> Add Comment</button>
+                   <button style={style4} type='text'> Add Comment</button>
                    </Link>
            <button onClick={() => this.handleLogout()} style={savedStyle} >Log Out</button>
 
