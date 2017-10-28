@@ -629,7 +629,7 @@ p {
        body {
       width: 100%;
      }
-      div {
+       .list {
       width: 100%;
      }
       button {

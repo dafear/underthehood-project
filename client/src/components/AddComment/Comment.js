@@ -61,7 +61,21 @@ class AddComment extends Component {
       }
 
 
+      const savedStyle = {
 
+          position: 'absolute',
+          top: 10,
+          right: 0,
+          backgroundColor: '#99c5ff',
+          borderRadius: 5,
+          width: 98,
+          textAlign: 'center',
+          padding: 5,
+          margin: 5,
+          color: 'white',
+          fontSize: 18, 
+
+      };
 
 
 
@@ -70,6 +84,8 @@ class AddComment extends Component {
         value: this.state.address,
         onChange: this.onChange,
       }
+
+
         return (
           <div className="Comment" style={style}>
             <h1>Enter Your Location</h1>
@@ -95,7 +111,9 @@ class AddComment extends Component {
 
               </textarea>
                       <br/><button style={style4} type="submit">Submit</button>
+
             </form>
+             <Link  style={savedStyle} to="/dashboard">Back to Searching</Link>
 
           </div>
     );
