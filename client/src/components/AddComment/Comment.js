@@ -32,13 +32,17 @@ class AddComment extends Component {
         },
       }
 
+       const style = {
+        textAlign: 'center',
+    }
+
 
       const inputProps = {
         value: this.state.address,
         onChange: this.onChange,
       }
         return (
-          <div>
+          <div style={style}>
             <PlacesAutocomplete inputProps={inputProps}
             styles={myStyles}
             onEnterKeyDown={(e) => this.handleSelect(props, e)}
@@ -56,8 +60,9 @@ class AddComment extends Component {
 
 
               </textarea>
-              <button type="submit">Submit</button>
+                      /><br/><button type="submit">Submit</button>
             </form>
+
           </div>
     );
   }
