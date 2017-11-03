@@ -8,6 +8,7 @@ import App from './App'
 import SignIn from './SignIn/SignIn'
 import Comment from './AddComment/Comment'
 import Comments from './Comments/Comments'
+import './App.css'
 
 const Main = () => (
 

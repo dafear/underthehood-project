@@ -32,7 +32,7 @@ import { onMapClick, onMapMarkerClick, fetchComments } from '../actions'
 
     return (
 
-        <Map className="Cool"
+        <Map
           google={window.google}
           // onReady={this.fetchPlaces}
           center={{
