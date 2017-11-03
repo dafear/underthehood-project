@@ -30,9 +30,9 @@ import './register.css';
   }
 
 
-    
 
-   
+
+
     render() {
 
        const style4 = {
@@ -44,10 +44,10 @@ import './register.css';
           padding: 5,
           margin: 5,
           color: 'white',
-          fontSize: 18, 
+          fontSize: 18,
       }
 
-      
+
 
 
       const style = {
@@ -59,21 +59,19 @@ import './register.css';
 
           position: 'absolute',
           top: 10,
-          right: 0,
-          backgroundColor: '#99c5ff',
-          borderRadius: 5,
-          width: 75,
-          textAlign: 'center',
-          padding: 5,
-          margin: 5,
-          color: 'white',
-          fontSize: 18, 
-
+          right: 10,
       };
 
-      const style1 = {
-        fontSize: 25,
-        color: 'white',
+
+      const title = {
+        marginTop: '250px',
+        fontFamily: 'Open Sans',
+        fontStyle: 'italic'
+      }
+
+      const subtitle = {
+        fontFamily: 'Open Sans',
+        fontWeight: 'bold'
       }
 
 
@@ -96,12 +94,12 @@ import './register.css';
                 this.props.dispatch(registerUser(this.state.email, this.state.password))
                 }}>
 
-                 
+
 
 
                 <div>
-                  <h1>Under The Hood</h1>
-                  <h2 style={style1}> what's really going on in your neighborhood.
+                  <h1 style={title}>Under The Hood</h1>
+                  <h2 style={subtitle}> what's really going on in your neighborhood.
                   <br/> Register here and find out! </h2>
                   </div>
 
@@ -122,11 +120,13 @@ import './register.css';
                   onChange={this.handlePasswordChange}
                   /><br/>
 
-                <button style={style4}>Sign up</button>
-
-               <Link  style={savedStyle} to="/signin">Sign In</Link>
+                <button className="app-button">Sign up</button>
 
              </form>
+
+               <p style={{fontSize: 20, fontWeight: 'bold'}}>Already have an account?              <Link to="/signin">
+<a>Sign in here</a></Link></p>
+
 
           </div>
 
@@ -138,4 +138,3 @@ import './register.css';
   };
 
       export default connect() (Register)
-

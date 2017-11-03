@@ -7,17 +7,6 @@ html, body {
 
 
 
-.Cool {
-  background: white;
-  color: white;
-  font-family: 'Roboto', helvetica, sans-serif;
-  padding: 120px;
-
-  /*padding-top: 60px;*/
-  background-repeat: no-repeat;
-  background-size: cover;
-
-}
 
 
 
@@ -28,10 +17,6 @@ html, body {
 
 
 
-
-
-
- 
 /* ----------- iPhone 5 and 5S ----------- */
 
 /* Portrait and Landscape */
@@ -330,7 +315,7 @@ html, body {
       input {
       width: 100%;
      }
-    
+
 }
 
 /* Portrait */
@@ -357,7 +342,7 @@ html, body {
       input {
       width: 100%;
     }
-   
+
 }
 
 /* Landscape */
@@ -384,7 +369,7 @@ html, body {
       input {
       width: 100%;
      }
-    
+
 }
 
 
@@ -413,7 +398,7 @@ html, body {
       input {
       width: 100%;
      }
-     
+
 }
 
 /* Portrait */
@@ -440,7 +425,7 @@ html, body {
       input {
       width: 100%;
      }
-    
+
 }
 
 /* Landscape */
@@ -467,7 +452,7 @@ html, body {
       input {
       width: 100%;
      }
-    
+
 }
 
 /* ----------- iPad 1 and 2 ----------- */
@@ -494,7 +479,7 @@ html, body {
       input {
       width: 100%;
      }
-    
+
   }
 
 /* Portrait */
@@ -521,7 +506,7 @@ html, body {
       input {
       width: 100%;
      }
-    
+
 }
 
 /* Landscape */
@@ -548,7 +533,7 @@ html, body {
       input {
       width: 100%;
      }
-    
+
 }
 
 /* ----------- iPad 3 and 4 ----------- */
@@ -602,7 +587,7 @@ html, body {
       input {
       width: 100%;
      }
-    
+
 }
 
 /* Landscape */
@@ -629,5 +614,5 @@ html, body {
       input {
       width: 100%;
      }
-    
+
 }

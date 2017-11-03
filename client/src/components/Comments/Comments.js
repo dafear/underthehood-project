@@ -28,12 +28,12 @@ class Comments extends Component {
           right: 0,
           backgroundColor: '#99c5ff',
           borderRadius: 5,
-          width: 98,
+          width: 200,
           textAlign: 'center',
           padding: 5,
           margin: 5,
           color: 'white',
-          fontSize: 18, 
+          fontSize: 18,
 
       };
 

@@ -60,7 +60,7 @@ class AddComment extends Component {
           padding: 15,
           margin: 15,
           color: 'white',
-          fontSize: 18, 
+          fontSize: 18,
       }
 
 
@@ -71,12 +71,12 @@ class AddComment extends Component {
           right: 0,
           backgroundColor: '#99c5ff',
           borderRadius: 5,
-          width: 98,
+          width: 200,
           textAlign: 'center',
           padding: 5,
           margin: 5,
           color: 'white',
-          fontSize: 18, 
+          fontSize: 18,
 
       };
 
@@ -98,9 +98,9 @@ class AddComment extends Component {
                   </video>
 
             <h1>Enter Your Location</h1>
-            
+
             <PlacesAutocomplete inputProps={inputProps}
-              styles={myStyles} 
+              styles={myStyles}
               onEnterKeyDown={(e) => this.handleSelect(props, e)}
               onSelect={(e) => this.handleSelect(props, e)}
             />
@@ -116,7 +116,7 @@ class AddComment extends Component {
 
             <h2 style={styles3}>Add Your Comment </h2>
 
-              <textarea 
+              <textarea
 
               style={style2} type="text" required placeholder="Enter Comment" name="comment">
 
