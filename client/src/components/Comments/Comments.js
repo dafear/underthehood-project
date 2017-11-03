@@ -3,6 +3,7 @@ import {connect} from 'react-redux'
 import { Link } from 'react-router-dom'
 import { fetchComments } from '../../actions'
 import './Comments.css';
+import moment from 'moment'
 
 class Comments extends Component {
 
@@ -51,12 +52,12 @@ class Comments extends Component {
     return (
       <div className="Comments">
         <h1 style={style3}>Comments</h1>
-        <ul>
           {this.props.comments.map((comment, index) => (
-            <li key={index}
-            style={style2}>{comment.comment}</li>
+            <div className="comment-section" key={index} style={style2}>
+              <p className="comment-text">{comment.comment}</p>
+              <span className="comment-date">by {comment.user} {moment(comment.created).startOf('day').fromNow()}</span>
+            </div>
           ))}
-        </ul>
          <Link  style={savedStyle} to="/dashboard">Back to Searching</Link>
 
       </div>

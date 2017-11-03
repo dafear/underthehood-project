@@ -19,20 +19,20 @@ class SignIn extends Component {
     };
   }
 
-     
+
 
 
   handleEmailChange = (evt) => {
       this.setState({ email: evt.target.value, error: false });
     }
 
-  handlePasswordChange = (evt) => { 
+  handlePasswordChange = (evt) => {
       this.setState({ password: evt.target.value, error: false });
     }
 
-  
 
-    
+
+
 
 
     render() {
@@ -46,13 +46,13 @@ class SignIn extends Component {
           padding: 5,
           margin: 5,
           color: 'white',
-          fontSize: 18, 
+          fontSize: 18,
       }
 
 
-    
 
-     
+
+
        const style = {
             textAlign: 'center',
            };
@@ -66,36 +66,36 @@ class SignIn extends Component {
            // console.log(this.state.error);
          let errorMessage = ""
         if (this.state.error) {
-            errorMessage =  "Sorry incorrect password!" 
-         
-         } 
+            errorMessage =  "Sorry incorrect password!"
+
+         }
 
 
 
         // let loading = ""
         // if (this.state.submitted) {
-        //   loading =  <div className='loading-indicator'> </div> 
+        //   loading =  <div className='loading-indicator'> </div>
         // }
 
 
-        
+
 
 
   return (
-     
+
        <div className="Signin" style={style}>
 
-         <video className="dev" playsInline autoPlay muted loop>
+         <video className="fullscreen-bg__video" playsInline autoPlay muted loop>
 
               <source src="movie.mp4" type="video/mp4"/>
 
                   </video>
 
-           <form onSubmit={(event)=>{
+           <form  className="login-form" onSubmit={(event)=>{
                 event.preventDefault()
                 this.props.dispatch(signinUser(this.state.email, this.state.password))
                 }}>
-                
+
                   <h1>Under The Hood</h1>
                   <h2>Get The Real!</h2>
 
@@ -115,14 +115,14 @@ class SignIn extends Component {
                 /><br/>
                 <button style={style4}>Sign In</button>
                 <p>{errorMessage}</p>
-                
+
               </form>
-              
-               
+
+
               </div>
-              
-     
-        
+
+
+
     )
   }
 }

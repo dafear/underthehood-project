@@ -40,23 +40,39 @@ html, body {
  text-decoration: none;
  }
 
+.comment-section {
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.comment-text {
+  text-align: left;
+  font-family: 'Lato', sans-serif;
+  font-size: 28px;
+  margin: 0;
+}
+
+.comment-date {
+  font-size: 14px;
+  font-style: italic;
+}
 
 ::-webkit-input-placeholder {
-    
+
     text-align: center;
 }
 :-moz-placeholder {
     /* Firefox 18- */
-    
+
     text-align: center;
 }
 ::-moz-placeholder {
     /* Firefox 19+ */
-    
+
     text-align: center;
 }
 :-ms-input-placeholder {
-    
+
     text-align: center;
 }
 
@@ -280,7 +296,7 @@ p {
        }
       ul {
         width: 100%;
-      } 
+      }
 
 }
 
@@ -310,7 +326,7 @@ p {
      }
       ul {
         width: 100%;
-      } 
+      }
 
 }
 
@@ -340,7 +356,7 @@ p {
      }
        ul {
         width: 100%;
-      } 
+      }
 }
 
 
@@ -373,7 +389,7 @@ p {
 
            ul {
              width: 100%;
-            } 
+            }
      }
 
 /* Portrait */
@@ -402,8 +418,8 @@ p {
      }
        ul {
         width: 100%;
-      } 
-     
+      }
+
 }
 
 /* Landscape */
@@ -432,8 +448,8 @@ p {
       }
         ul {
         width: 100%;
-      } 
-    
+      }
+
 }
 
 
@@ -462,7 +478,7 @@ p {
       input {
       width: 100%;
      }
-    
+
 }
 
 /* Portrait */
@@ -491,8 +507,8 @@ p {
      }
        ul {
         width: 100%;
-      } 
-    
+      }
+
 }
 
 /* Landscape */
@@ -521,8 +537,8 @@ p {
      }
        ul {
         width: 100%;
-      } 
-     
+      }
+
 }
 
 
@@ -556,8 +572,8 @@ p {
      }
        ul {
         width: 100%;
-      } 
-    
+      }
+
 }
 
 /* Portrait */
@@ -586,8 +602,8 @@ p {
     }
       ul {
         width: 100%;
-      } 
-   
+      }
+
 }
 
 /* Landscape */
@@ -616,8 +632,8 @@ p {
      }
        ul {
         width: 100%;
-      } 
-    
+      }
+
 }
 
 
@@ -648,8 +664,8 @@ p {
      }
        ul {
         width: 100%;
-      } 
-     
+      }
+
 }
 
 /* Portrait */
@@ -678,8 +694,8 @@ p {
      }
        ul {
         width: 100%;
-      } 
-    
+      }
+
 }
 
 /* Landscape */
@@ -708,8 +724,8 @@ p {
      }
        ul {
         width: 100%;
-      } 
-    
+      }
+
 }
 
 /* ----------- iPad 1 and 2 ----------- */
@@ -738,8 +754,8 @@ p {
      }
        ul {
         width: 100%;
-      } 
-    
+      }
+
   }
 
 /* Portrait */
@@ -768,8 +784,8 @@ p {
      }
        ul {
         width: 100%;
-      } 
-    
+      }
+
 }
 
 /* Landscape */
@@ -798,8 +814,8 @@ p {
      }
        ul {
         width: 100%;
-      } 
-    
+      }
+
 }
 
 /* ----------- iPad 3 and 4 ----------- */
@@ -828,7 +844,7 @@ p {
      }
        ul {
         width: 100%;
-      } 
+      }
 
 }
 
@@ -858,8 +874,8 @@ p {
      }
        ul {
         width: 100%;
-      } 
-    
+      }
+
 }
 
 /* Landscape */
@@ -888,5 +904,5 @@ p {
      }
       ul {
         width: 100%;
-      } 
+      }
 }
