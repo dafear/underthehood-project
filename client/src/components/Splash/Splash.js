@@ -9,7 +9,7 @@ import Register from './Register'
  	return(
  		
 	<div>
-		
+	
 		<Register />
 	</div>
 

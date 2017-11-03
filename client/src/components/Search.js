@@ -78,12 +78,17 @@ class Search extends Component {
 
       const style4 = {
 
+          position: 'absolute',
+          float: 'left',
+          top: 10,
+           left: 1150,
+
          backgroundColor: '#99c5ff',
           borderRadius: 10,
           width: '98px',
           textAlign: 'center',
-          padding: 10,
-          margin: 10,
+          padding: 5,
+          margin: 5,
           color: 'white',
           fontSize: 14, 
       }
@@ -92,6 +97,7 @@ class Search extends Component {
       const inputProps = {
       value: this.state.address,
       onChange: this.onChange,
+       placeholder: 'Search Away...'
     }
         return (
           <div className="Search" style={style}>

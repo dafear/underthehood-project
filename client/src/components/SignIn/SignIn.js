@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {signinUser} from '../../actions/index'
 import {connect} from 'react-redux'
-import './cool.css';
+// import './cool.css';
 import axios from 'axios';
 
 
@@ -84,6 +84,12 @@ class SignIn extends Component {
   return (
      
        <div className="Signin" style={style}>
+
+         <video className="dev" playsInline autoPlay muted loop>
+
+              <source src="movie.mp4" type="video/mp4"/>
+
+                  </video>
 
            <form onSubmit={(event)=>{
                 event.preventDefault()

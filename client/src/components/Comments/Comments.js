@@ -12,7 +12,7 @@ class Comments extends Component {
 
     const style2 = {
         fontSize: '30px',
-       textAlign: 'center',
+       // textAlign: 'left',
     }
 
      const style = {
@@ -37,10 +37,21 @@ class Comments extends Component {
 
       };
 
+      const style3 = {
+
+          position: 'absolute',
+          top: 10,
+          left: 0,
+           textAlign: 'center',
+            padding: 5,
+          margin: 5,
+
+      }
+
     return (
       <div className="Comments">
-        <h1>Comments</h1>
-        <ul style={style}>
+        <h1 style={style3}>Comments</h1>
+        <ul>
           {this.props.comments.map((comment, index) => (
             <li key={index}
             style={style2}>{comment.comment}</li>

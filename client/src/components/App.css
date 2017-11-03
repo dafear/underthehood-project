@@ -7,6 +7,30 @@ html, body {
 
 
 
+.Cool {
+  background: white;
+  color: white;
+  font-family: 'Roboto', helvetica, sans-serif;
+  padding: 120px;
+
+  /*padding-top: 60px;*/
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
  
 /* ----------- iPhone 5 and 5S ----------- */
 

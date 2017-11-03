@@ -14,11 +14,28 @@ html, body {
   padding: 0;
   margin: 0;
   padding-top: 60px;
-  background-image: url("../../images/nb.png");
+  /*background-image: url("movie.mp4");*/
   background-repeat: no-repeat;
   background-size: cover;
 
 }
+ .dev {
+/*  making the video fullscreen  */
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+ 
+  background-size: cover;
+  transition: 1s opacity;
+}
+
 
 /*.loading-indicator {
   margin:0 auto;
@@ -31,6 +48,27 @@ html, body {
  color: #ff8000;
  text-decoration: none;
  }
+
+
+ ::-webkit-input-placeholder {
+    
+    text-align: center;
+}
+:-moz-placeholder {
+    /* Firefox 18- */
+    
+    text-align: center;
+}
+::-moz-placeholder {
+    /* Firefox 19+ */
+    
+    text-align: center;
+}
+:-ms-input-placeholder {
+    
+    text-align: center;
+}
+
 
 
 
@@ -60,7 +98,10 @@ input {
 
 
 
-
+  ::-webkit-scrollbar {
+      width: 0px;
+      background: transparent; 
+  }
 
 
 

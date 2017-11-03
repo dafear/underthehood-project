@@ -3,7 +3,7 @@ import PlacesAutocomplete, { geocodeByAddress, geocodeByPlaceId, getLatLng } fro
 import {connect} from 'react-redux'
 import { Link } from 'react-router-dom'
 import { saveComment } from '../../actions'
-import './Comment.css';
+// import './Comment.css';
 
 
 class AddComment extends Component {
@@ -27,20 +27,23 @@ class AddComment extends Component {
       const myStyles = {
 
         input: {
-          height: '100%',
-          width: '80%',
-          padding: '30px',
+        fontSize: '25px',
+        height: '50%',
+        width: '50%',
+        padding: '20px',
 
         },
       }
 
        const style = {
         textAlign: 'center',
-    }
+       }
+
      const style2 = {
-        fontSize: '25px',
+        fontSize: '30px',
         height: '50%',
         width: '50%',
+        padding: '30px',
 
 
     }
@@ -54,8 +57,8 @@ class AddComment extends Component {
           borderRadius: 5,
           width: '98px',
           textAlign: 'center',
-          padding: 5,
-          margin: 5,
+          padding: 15,
+          margin: 15,
           color: 'white',
           fontSize: 18, 
       }
@@ -83,17 +86,25 @@ class AddComment extends Component {
       const inputProps = {
         value: this.state.address,
         onChange: this.onChange,
+        placeholder: 'Enter Location...'
       }
 
 
         return (
           <div className="Comment" style={style}>
+
+           <video className="dev" playsInline autoPlay muted loop>
+              <source src="movie.mp4" type="video/mp4"/>
+                  </video>
+
             <h1>Enter Your Location</h1>
+            
             <PlacesAutocomplete inputProps={inputProps}
-            styles={myStyles} 
-            onEnterKeyDown={(e) => this.handleSelect(props, e)}
-             onSelect={(e) => this.handleSelect(props, e)}
+              styles={myStyles} 
+              onEnterKeyDown={(e) => this.handleSelect(props, e)}
+              onSelect={(e) => this.handleSelect(props, e)}
             />
+
             <form onSubmit={(e) => {
               e.preventDefault()
 
@@ -106,13 +117,16 @@ class AddComment extends Component {
             <h2 style={styles3}>Add Your Comment </h2>
 
               <textarea 
+
               style={style2} type="text" required placeholder="Enter Comment" name="comment">
 
 
               </textarea>
-                      <br/><button style={style4} type="submit">Submit</button>
+
+                  <br/><button style={style4} type="submit">Submit</button>
 
             </form>
+
              <Link  style={savedStyle} to="/dashboard">Back to Searching</Link>
 
           </div>

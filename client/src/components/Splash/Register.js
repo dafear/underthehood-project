@@ -77,16 +77,27 @@ import './register.css';
       }
 
 
+
           return (
 
 
 
             <div className="list" style={style}>
 
+             <video className="dev" playsInline autoPlay muted loop>
+
+              <source src="movie.mp4" type="video/mp4"/>
+
+                  </video>
+
+
               <form onSubmit={(event)=>{
                 event.preventDefault()
                 this.props.dispatch(registerUser(this.state.email, this.state.password))
                 }}>
+
+                 
+
 
                 <div>
                   <h1>Under The Hood</h1>
