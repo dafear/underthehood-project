@@ -10,6 +10,7 @@ class App extends Component {
       <div className="Cool">
       	 <Search />
         <GoogleMap {...this.props} />
+        
       </div>
     );
   }

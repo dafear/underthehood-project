@@ -41,6 +41,11 @@ class Search extends Component {
 
       const myStyles = {
 
+        root: {
+          position: 'relative',
+          paddingBottom: '100px',
+        },
+
         input: {
           height: '100%',
           width: '100%',
@@ -51,6 +56,7 @@ class Search extends Component {
 
         const style = {
         textAlign: 'center',
+
     }
 
       const styles2 = {
@@ -81,6 +87,13 @@ class Search extends Component {
         top: 0
       }
 
+      const butWrapper = {
+        display: 'flex',
+        margin: '2px',
+       // width: '40%', 
+        justifyContent: 'spaceAround',
+      }
+
 
       const inputProps = {
       value: this.state.address,
@@ -89,11 +102,11 @@ class Search extends Component {
     }
         return (
           <div className="Search" style={style}>
-            <div className="navbar" style={navbar}>
+            <div style={butWrapper}>
               <Link to='/comment'>
-                <button className="app-button" type='text'> Add Comment</button>
+                <button className="Map-button" type='text'> Add Comment</button>
              </Link>
-             <button className="app-button" onClick={() => this.handleLogout()}  >Log Out</button>
+             <button className="Dap-button" onClick={() => this.handleLogout()}>Log Out</button>
             </div>
             <h1 className="search-title" style={styles2}>Search Your Neighborhood</h1>
             <h2 style={styles2}> Find out what's really going on in different neighborhoods across the country and the world.

@@ -31,8 +31,10 @@ class AddComment extends Component {
         height: '50%',
         width: '50%',
         padding: '20px',
+     
 
         },
+
       }
 
        const style = {
@@ -53,14 +55,15 @@ class AddComment extends Component {
 
        const style4 = {
 
-         backgroundColor: '#99c5ff',
-          borderRadius: 5,
-          width: '98px',
-          textAlign: 'center',
-          padding: 15,
-          margin: 15,
-          color: 'white',
-          fontSize: 18,
+         backgroundColor: '#3498db',
+        color: '#fff',
+        padding: '15px',
+        width: '200px',
+        border: 'none',
+        fontSize: '15px',
+        textTransform: 'uppercase',
+        marginTop: '15px',
+        borderRadius: '7px',
       }
 
 
@@ -77,6 +80,7 @@ class AddComment extends Component {
           margin: 5,
           color: 'white',
           fontSize: 18,
+          zIndex: 2,
 
       };
 
@@ -93,9 +97,20 @@ class AddComment extends Component {
         return (
           <div className="Comment" style={style}>
 
-           <video className="dev" playsInline autoPlay muted loop>
+           <video className="fullscreen-bg__video" playsInline autoPlay muted loop>
               <source src="movie.mp4" type="video/mp4"/>
                   </video>
+
+            
+
+            <form className="register-form" onSubmit={(e) => {
+              e.preventDefault()
+
+              const comment = e.target.comment.value
+
+              this.props.dispatch(saveComment(this.state.lat, this.state.lng, comment))
+
+            }}>
 
             <h1>Enter Your Location</h1>
 
@@ -105,25 +120,16 @@ class AddComment extends Component {
               onSelect={(e) => this.handleSelect(props, e)}
             />
 
-            <form onSubmit={(e) => {
-              e.preventDefault()
+            <h2  style={styles3}>Add Your Comment </h2>
 
-              const comment = e.target.comment.value
-
-              this.props.dispatch(saveComment(this.state.lat, this.state.lng, comment))
-
-            }}>
-
-            <h2 style={styles3}>Add Your Comment </h2>
-
-              <textarea
+              <textarea 
 
               style={style2} type="text" required placeholder="Enter Comment" name="comment">
 
 
               </textarea>
 
-                  <br/><button style={style4} type="submit">Submit</button>
+                  <br/><button style={style4}  type="submit">Submit</button>
 
             </form>
 

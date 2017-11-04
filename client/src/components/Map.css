@@ -20,13 +20,55 @@ html, body {
   color: white;
   font-family: 'Roboto', helvetica, sans-serif;
   /*padding: 120px;*/
-
   /*padding-top: 60px;*/
   background-repeat: no-repeat;
   background-size: cover;
 
 }
+/*.madbutton-wrapper {
+ 
+  display: flex;
+  width: 40%;
+  justify-content: space-around;
+}*/
 
+.Map-button {
+ 
+  top: 10;
+  left: 0;
+  background-color: #3498db!important;
+  color: #fff!important;
+  padding: 15px;
+  width: 200px;
+  margin: 6px;
+  margin-bottom: 10px;
+  border: none;
+  padding: 10px;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-family: 'Lato', sans-serif;
+  border-radius: 7px;
+}
+
+.Dap-button {
+  background-color: #3498db!important;
+  color: #fff!important;
+  padding: 15px;
+  width: 200px;
+  margin: 6px;
+  margin-left: 6px;
+  margin-bottom: 10px;
+  border: none;
+  padding: 10px;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-family: 'Lato', sans-serif;
+  border-radius: 7px;
+}
+
+/*.search-title {
+  padding-bottom: 100px;
+}*/
 
 
 /* Portrait */
@@ -53,9 +95,130 @@ html, body {
       input {
        width: 100%;
      }
-     .navbar {
-       margin-bottom: 50px;
+    
+     .map-button {
+      margin: 0;
+
      }
+
+    /* .search-title {
+  padding: 0;
+}*/
+
+     /* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+        body {
+        width: 100%;
+       }
+        div {
+        width: 100%;
+       }
+        button {
+        width: 100%;
+       }
+      
+       
+        p {
+        width: 100%;
+       }
+        input {
+        width: 100%;
+       }
+
+      
+       .map-button {
+      margin: 0;
+
+     }
+
+     .search-title {
+  padding: 0;
+}
+
+
+    /* .search-title {
+  padding: 0;
+}*/
+
+
+}
+
+
+/* ----------- iPhone 6 ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+                body {
+                width: 100%;
+               }
+                div {
+                width: 100%;
+               }
+                button {
+                width: 100%
+               }
+                h1 {
+                width: 100%;
+               }
+                p {
+                width: 100%;
+               }
+                input {
+               width: 100%;
+               }
+       .map-button {
+      margin: 0;
+
+     }
+   
+/*
+     .search-title {
+  padding: 0;
+}*/
+
+              
+     }
+   }
+
+   @media only screen
+  and (min-device-width: 360px)
+  and (max-device-width: 640px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+      body {
+      width: 100%;
+     }
+      div {
+      width: 100%;
+     }
+      button {
+      width: 100%;
+     }
+      h1 {
+      width: 100%;
+     }
+      p {
+      width: 100%;
+     }
+      input {
+       width: 100%;
+     }
+        
+       .map-button {
+      margin: 0;
+
+     }
+      
+/*
+     .search-title {
+  padding: 0;
+}*/
 
 
 }
