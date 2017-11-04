@@ -4,11 +4,8 @@
 }
 html, body {
     height: 100%;
-    background: #fff
+    background: #fff;
 }
-
-
-
 
 
 
@@ -19,8 +16,9 @@ html, body {
   background: white;
   color: white;
   font-family: 'Roboto', helvetica, sans-serif;
-  /*padding: 120px;*/
-  /*padding-top: 60px;*/
+ /* padding: 120px;
+  padding-top: 60px;*/
+  margin-bottom: 170px;
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -67,7 +65,7 @@ html, body {
 }
 
 /*.search-title {
-  padding-bottom: 100px;
+  padding-bottom: 110px;
 }*/
 
 

@@ -116,8 +116,8 @@ import './register.css';
 
                 </form>
 
-                  <p style={{fontSize: 20, fontWeight: 'bold', position: 'relative', 'zIndex': 2}}>Already have an account?              <Link to="/signin">
-   <a>Sign in here</a></Link></p>
+                  <p style={{fontSize: 20, fontWeight: 'bold', position: 'relative', 'zIndex': 2}}>Already have an account? <Link to="/signin">
+                      <a>Sign in here</a></Link></p>
 
              </div>
         )

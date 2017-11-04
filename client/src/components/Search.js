@@ -43,7 +43,7 @@ class Search extends Component {
 
         root: {
           position: 'relative',
-          paddingBottom: '100px',
+          paddingBottom: '10px',
         },
 
         input: {
