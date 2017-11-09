@@ -13,10 +13,10 @@ class AddComment extends Component {
       this.onChange = (address) => this.setState({ address })
     }
 
-    handleSelect(props, address) {
+     handleSelect(props, address) {
       geocodeByAddress(address)
-      .then(results => console.log(results[0].geometry.location.lat(), results[0].geometry.location.lng()))
-      .then (latLng => console.log(latLng))
+      .then(results => getLatLng(results[0]))
+      .then (latLng => this.setState({lat: latLng.lat, lng: latLng.lng}))
       .catch(error => console.error('Error', error))
       this.setState({address: ''})
     }
