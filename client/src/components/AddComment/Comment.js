@@ -13,7 +13,7 @@ class AddComment extends Component {
       this.onChange = (address) => this.setState({ address })
     }
 
-     handleSelect(props, address) {
+      handleSelect(props, address) {
       geocodeByAddress(address)
       .then(results => getLatLng(results[0]))
       .then (latLng => this.setState({lat: latLng.lat, lng: latLng.lng}))
