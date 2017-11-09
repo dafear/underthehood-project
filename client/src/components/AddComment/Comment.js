@@ -21,6 +21,8 @@ class AddComment extends Component {
       this.setState({address: ''})
     }
 
+
+
     render() {
       const props = this.props
 
@@ -65,7 +67,10 @@ class AddComment extends Component {
         marginTop: '15px',
         borderRadius: '7px',
       }
-
+          
+          // const style8 = {
+          //   backgroundColor: 'white',
+          // }
 
       const savedStyle = {
 
