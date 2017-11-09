@@ -16,9 +16,9 @@ class Search extends Component {
 
 
 
-      handleSelect(props, e) {
+      handleSelect(props, address) {
 
-      geocodeByAddress(this.state.address, this.state.placeId)
+      geocodeByAddress(address)
       .then(results => getLatLng(results[0]))
       .then (latLng => props.dispatch(upDateMapLocation(latLng.lat, latLng.lng)))
       .catch(error => console.error('Error', error))
@@ -90,7 +90,7 @@ class Search extends Component {
       const butWrapper = {
         display: 'flex',
         margin: '2px',
-       // width: '40%', 
+       // width: '40%',
         justifyContent: 'spaceAround',
       }
 
