@@ -13,10 +13,10 @@ class AddComment extends Component {
       this.onChange = (address) => this.setState({ address })
     }
 
-    handleSelect(props, e) {
-      geocodeByAddress(this.state.address)
-      .then(results => getLatLng(results[0]))
-      .then (latLng => this.setState({lat: latLng.lat, lng: latLng.lng}))
+    handleSelect(props, address) {
+      geocodeByAddress(address)
+      .then(results => console.log(results[0].geometry.location.lat(), results[0].geometry.location.lng()))
+      .then (latLng => console.log(latLng))
       .catch(error => console.error('Error', error))
       this.setState({address: ''})
     }
@@ -31,7 +31,7 @@ class AddComment extends Component {
         height: '50%',
         width: '50%',
         padding: '20px',
-     
+
 
         },
 
@@ -101,7 +101,7 @@ class AddComment extends Component {
               <source src="movie.mp4" type="video/mp4"/>
                   </video>
 
-            
+
 
             <form className="register-form" onSubmit={(e) => {
               e.preventDefault()
@@ -122,7 +122,7 @@ class AddComment extends Component {
 
             <h2  style={styles3}>Add Your Comment </h2>
 
-              <textarea 
+              <textarea
 
               style={style2} type="text" required placeholder="Enter Comment" name="comment">
 
