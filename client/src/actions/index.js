@@ -13,7 +13,7 @@
  export const registerUser = (email, password)=> {
    return (dispatch) => {
 
-     return fetch('http://localhost:8080/api/auth/register', {
+     return fetch('https://underthehood-project.herokuapp.com/api/auth/register', {
          method: 'POST',
          headers: {
              'content-type': 'application/json'
@@ -33,7 +33,7 @@
    return (dispatch) => {
 
      const token = btoa(`${email}:${password}`);
-     fetch('http://localhost:8080/api/auth/login', {
+     fetch('https://underthehood-project.herokuapp.com/api/auth/login', {
          method: 'POST',
          headers: {
              // Provide our username and password as login credentials
@@ -62,7 +62,7 @@ export const fetchComments = () => {
 
 	const instance = axios.create({ headers: { 'Content-Type': 'application/json' } });
 
-	return instance.get('http://localhost:8080/api/comment')
+	return instance.get('https://underthehood-project.herokuapp.com/api/comment')
 	.then(response => {
     console.log(response.data);
 	   dispatch(recievedComments(response.data))
@@ -78,7 +78,7 @@ export const saveComment = (lat, lng, comment) => {
  return (dispatch) => {
 
    const token = localStorage.getItem('apiToken');
-   fetch('http://localhost:8080/api/comment', {
+   fetch('https://underthehood-project.herokuapp.com/api/comment', {
        method: 'POST',
        headers: {
            // Provide our username and password as login credentials
@@ -102,7 +102,7 @@ export const ON_MAP_MARKER_CLICK = 'ON_MAP_MARKER_CLICK';
 export const onMapMarkerClick = (marker, history) => {
   return dispatch => {
     const token = localStorage.getItem('apiToken');
-    fetch(`http://localhost:8080/api/comment/${marker.lat}/${marker.lng}`, {
+    fetch(`https://underthehood-project.herokuapp.com/api/comment/${marker.lat}/${marker.lng}`, {
         method: 'GET',
         headers: {
             // Provide our username and password as login credentials

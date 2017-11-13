@@ -32,10 +32,19 @@ class SignIn extends Component {
 
 
 
-
-
-
     render() {
+
+
+
+      const title = {
+        fontFamily: 'Open Sans',
+        fontStyle: 'italic'
+      }
+
+      const subtitle = {
+        fontFamily: 'Open Sans',
+        fontWeight: 'bold'
+      }
 
        const style4 = {
 
@@ -50,17 +59,10 @@ class SignIn extends Component {
       }
 
 
-
-
-
        const style = {
             textAlign: 'center',
-           };
+           }
 
-
-        const style2 = {
-          color: '#FF8C00',
-        }
 
 
            // console.log(this.state.error);
@@ -96,8 +98,8 @@ class SignIn extends Component {
                 this.props.dispatch(signinUser(this.state.email, this.state.password))
                 }}>
 
-                  <h1>Under The Hood</h1>
-                  <h2>Get The Real!</h2>
+                  <h1 style={title}>Under The Hood</h1>
+                  <h2 style={subtitle}>Get The Real!</h2>
 
               <input
                   type="text"
@@ -113,7 +115,7 @@ class SignIn extends Component {
                   value={this.state.password}
                   onChange={this.handlePasswordChange}
                 /><br/>
-                <button style={style4}>Sign In</button>
+                <button className="app-button">Sign In</button>
                 <p>{errorMessage}</p>
 
               </form>
@@ -126,4 +128,4 @@ class SignIn extends Component {
     )
   }
 }
-export default connect() (SignIn)
+export default connect()(SignIn)

@@ -36,6 +36,7 @@ class Search extends Component {
 
 
     render() {
+      
       const props = this.props
 
 
@@ -61,31 +62,12 @@ class Search extends Component {
 
       const styles2 = {
         color: 'black',
+        // fontFamily: 'Open Sans',
+        // fontStyle: 'italic'
       }
-       const styles1 = {
-        color: 'black',
-      }
+      
 
-       const savedStyle = {
-
-          position: 'absolute',
-          top: 10,
-          right: 0,
-          backgroundColor: '#99c5ff',
-          borderRadius: 5,
-          width: '98px',
-          textAlign: 'center',
-          padding: 5,
-          margin: 5,
-          color: 'white',
-          fontSize: 18,
-
-      };
-
-      const navbar = {
-        position: 'absolute',
-        top: 0
-      }
+     
 
       const butWrapper = {
         display: 'flex',
@@ -100,6 +82,7 @@ class Search extends Component {
       onChange: this.onChange,
        placeholder: 'Search Away...'
     }
+
         return (
           <div className="Search" style={style}>
             <div style={butWrapper}>

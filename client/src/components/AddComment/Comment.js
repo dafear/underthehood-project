@@ -18,7 +18,7 @@ class AddComment extends Component {
       .then(results => getLatLng(results[0]))
       .then (latLng => this.setState({lat: latLng.lat, lng: latLng.lng}))
       .catch(error => console.error('Error', error))
-      this.setState({address: ''})
+      // this.setState({address: ''})
     }
 
 
@@ -31,11 +31,11 @@ class AddComment extends Component {
         input: {
         fontSize: '25px',
         height: '50%',
-        width: '50%',
+        width: '60%',
         padding: '20px',
 
 
-        },
+        }
 
       }
 
@@ -46,8 +46,8 @@ class AddComment extends Component {
      const style2 = {
         fontSize: '30px',
         height: '50%',
-        width: '50%',
-        padding: '30px',
+        width: '60%',
+        padding: '20px',
 
 
     }
@@ -55,7 +55,9 @@ class AddComment extends Component {
         fontSize: '30px'
       }
 
-       const style4 = {
+      
+
+      const style5 = {
 
          backgroundColor: '#3498db',
         color: '#fff',
@@ -68,9 +70,7 @@ class AddComment extends Component {
         borderRadius: '7px',
       }
           
-          // const style8 = {
-          //   backgroundColor: 'white',
-          // }
+        
 
       const savedStyle = {
 
@@ -81,15 +81,15 @@ class AddComment extends Component {
           borderRadius: 5,
           width: 200,
           textAlign: 'center',
-          padding: 5,
-          margin: 5,
+          margin: 2,
           color: 'white',
           fontSize: 18,
           zIndex: 2,
 
-      };
+      }
 
-
+      
+     
 
 
       const inputProps = {
@@ -134,7 +134,7 @@ class AddComment extends Component {
 
               </textarea>
 
-                  <br/><button style={style4}  type="submit">Submit</button>
+                  <br/><button style={style5}  type="submit">Submit</button>
 
             </form>
 

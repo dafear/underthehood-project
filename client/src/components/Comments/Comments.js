@@ -16,11 +16,7 @@ class Comments extends Component {
        // textAlign: 'left',
     }
 
-     const style = {
-        // listStylePosition: 'inside',
-       listStyleType: 'none',
-    }
-
+   
 
     const savedStyle = {
 
@@ -29,10 +25,10 @@ class Comments extends Component {
           right: 0,
           backgroundColor: '#99c5ff',
           borderRadius: 5,
-          width: 200,
+          width: 58,
           textAlign: 'center',
-          padding: 5,
-          margin: 5,
+          padding: 2,
+          margin: 1,
           color: 'white',
           fontSize: 18,
 
@@ -45,7 +41,7 @@ class Comments extends Component {
           left: 0,
            textAlign: 'center',
             padding: 5,
-          margin: 5,
+          margin: 2,
 
       }
 
@@ -58,9 +54,10 @@ class Comments extends Component {
               <span className="comment-date">by {comment.user} {moment(comment.created).startOf('day').fromNow()}</span>
             </div>
           ))}
-         <Link  style={savedStyle} to="/dashboard">Back to Searching</Link>
-
-      </div>
+         
+         <Link className='NavTag' style={savedStyle} to="/dashboard">Search</Link>
+          </div>
+     
     )
   }
 }

@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "axios": "^0.16.2",
+    "enzyme-adapter-react-16": "^1.0.4",
     "google-maps-react": "^1.1.0",
     "material-ui": "^0.19.4",
     "moment": "^2.19.1",
@@ -25,5 +26,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "enzyme": "^3.1.1",
+    "react-test-renderer": "^16.1.0"
   }
 }

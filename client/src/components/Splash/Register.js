@@ -31,36 +31,14 @@ import './register.css';
 
 
 
-
-
     render() {
 
-       const style4 = {
-
-         backgroundColor: '#99c5ff',
-          borderRadius: 5,
-          width: '98px',
-          textAlign: 'center',
-          padding: 5,
-          margin: 5,
-          color: 'white',
-          fontSize: 18,
-      }
-
-
-
+      
 
       const style = {
         textAlign: 'center',
-    };
+    }
 
-
-      const savedStyle = {
-
-          position: 'absolute',
-          top: 10,
-          right: 10,
-      };
 
 
       const title = {
@@ -126,4 +104,4 @@ import './register.css';
 
   };
 
-      export default connect() (Register)
+      export default connect()(Register)
