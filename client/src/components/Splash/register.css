@@ -180,6 +180,20 @@ p {
 }
 
 
+
+
+
+
+
+
+
+/*@media (min-width: 1176px) {
+  
+  .sizeDown {
+    display: none;
+  }
+  
+}*/
 /* ----------- iPhone 5 and 5S ----------- */
 
 /* Portrait and Landscape */
@@ -247,6 +261,9 @@ p {
       input {
        width: 100%;
      }
+   /*   .sizeDown {
+    display: none;
+  }*/
 
 
 }

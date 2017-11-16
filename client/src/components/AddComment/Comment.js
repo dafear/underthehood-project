@@ -95,7 +95,8 @@ class AddComment extends Component {
       const inputProps = {
         value: this.state.address,
         onChange: this.onChange,
-        placeholder: 'Enter Location...'
+        placeholder: 'Enter Location...',
+
       }
 
 
@@ -111,8 +112,17 @@ class AddComment extends Component {
             <form className="register-form" onSubmit={(e) => {
               e.preventDefault()
 
-              const comment = e.target.comment.value
 
+              const comment = e.target.comment.value
+              
+              let address = this.state.address
+              let err = this.state.err
+
+              if(!address) {
+                console.log(err)
+                return
+              } 
+            
               this.props.dispatch(saveComment(this.state.lat, this.state.lng, comment))
 
             }}>
@@ -123,7 +133,10 @@ class AddComment extends Component {
               styles={myStyles}
               onEnterKeyDown={(e) => this.handleSelect(props, e)}
               onSelect={(e) => this.handleSelect(props, e)}
+
             />
+              
+
 
             <h2  style={styles3}>Add Your Comment </h2>
 
@@ -137,6 +150,8 @@ class AddComment extends Component {
                   <br/><button style={style5}  type="submit">Submit</button>
 
             </form>
+
+
 
              <Link  style={savedStyle} to="/dashboard">Back to Searching</Link>
 
