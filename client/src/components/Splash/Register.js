@@ -67,7 +67,7 @@ import './register.css';
 
 
 
-                   <div>
+                   <div className="list">
                      <h1 style={title}>Under The Hood</h1>
                      <h2 style={subtitle}> what's really going on in your neighborhood.
                      <br/> Register here and find out! </h2>

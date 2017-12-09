@@ -109,7 +109,7 @@ class AddComment extends Component {
 
 
 
-            <form className="register-form" onSubmit={(e) => {
+            <form className="regular-form" onSubmit={(e) => {
               e.preventDefault()
 
 

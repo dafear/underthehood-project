@@ -48,6 +48,14 @@ html, body {
 }
 
 
+ /*.list {
+  background-color: lightgrey;
+    width: 700px;
+    border: 25px solid green;
+    padding: 25px;
+    margin: 150px;
+    
+ }*/
 
 
 .fullscreen-bg__video {
@@ -66,8 +74,21 @@ html, body {
 .register-form, .login-form {
   z-index: 2;
   position: relative;
+   background-color: #808080;
+/*    width: 700px;
+*/    border: 25px #D3D3D3;
+    padding: 25px;
+    margin: 140px;
+    
+    
 }
 
+
+.regular-form {
+  z-index: 2;
+  position: relative;
+}
+ 
 
 
 
@@ -166,6 +187,7 @@ input {
 
 div {
   font-size: 14px;
+
 }
 
 
@@ -232,6 +254,9 @@ p {
           color: white;
           font-size: 18,
 
+       }
+       .register-form, .login-form {
+        margin: 15px;
        }
 
 
@@ -322,6 +347,9 @@ p {
                 input {
                width: 100%;
                }
+.register-form, .login-form {
+      margin: 20px;
+     }
 
      }
 
@@ -407,7 +435,9 @@ p {
       input {
       width: 100%;
      }
-
+     .register-form, .login-form {
+      margin: 20px;
+     }
 }
 
 /* Portrait */
@@ -630,7 +660,9 @@ p {
       input {
       width: 100%;
      }
-
+     /* .register-form, .login-form {
+      margin: 50px;
+     }*/
 }
 
 /* ----------- iPad 1 and 2 ----------- */
@@ -711,7 +743,9 @@ p {
       input {
       width: 100%;
      }
-
+/*.register-form, .login-form {
+      margin: 50px;
+     }*/
 }
 
 /* ----------- iPad 3 and 4 ----------- */
@@ -792,5 +826,93 @@ p {
       input {
       width: 100%;
      }
+    /*  .register-form, .login-form {
+      margin: 50px;
+     }*/
 
 }
+@media only screen
+  and (min-device-width: 667px)
+  and (max-device-width: 375px)
+  and (orientation: landscape)
+  and (-webkit-min-device-pixel-ratio: 1) {
+      body {
+      width: 100%;
+     }
+      div {
+      width: 100%;
+     }
+      button {
+      width: 100%;
+     }
+      h1 {
+      width: 100%;
+     }
+      p {
+      width: 100%;
+     }
+      input {
+      width: 100%;
+     }
+     /* .register-form, .login-form {
+        z-index: 2;
+        position: relative;
+        border-width: 25px;
+        padding: 25px;
+      margin: 50px;
+     }*/
+}
+@media only screen
+  and (min-device-width: 736px)
+  and (max-device-width: 414px)
+  and (orientation: landscape)
+  and (-webkit-min-device-pixel-ratio: 1) {
+      body {
+      width: 100%;
+     }
+      div {
+      width: 100%;
+     }
+      button {
+      width: 100%;
+     }
+      h1 {
+      width: 100%;
+     }
+      p {
+      width: 100%;
+     }
+      input {
+      width: 100%;
+     }
+      /*.register-form, .login-form {
+      margin: 50px;
+     }*/
+}
+
+/*@media only screen
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+                body {
+                width: 100%;
+               }
+                div {
+                width: 100%;
+               }
+                button {
+                width: 100%
+               }
+                h1 {
+                width: 100%;
+               }
+                p {
+                width: 100%;
+               }
+                input {
+               width: 100%;
+               }
+      
+               .register-form, .login-form {
+      margin: 50px;
+     }*/
+     
