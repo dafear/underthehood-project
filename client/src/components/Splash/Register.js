@@ -3,6 +3,9 @@ import { Link } from 'react-router-dom'
 import axios from 'axios';
 import {connect} from 'react-redux'
 import {registerUser} from '../../actions/index'
+import cooler from '../../images/cooler.png';
+import search from '../../images/search.png';
+import com7 from '../../images/com7.png';
 import './register.css';
 
 
@@ -97,6 +100,33 @@ import './register.css';
 
                 </form>
 
+                 <div className="super">
+                 <img className="wow" src={search} alt="search" />
+                 <div className="oj">
+                  <h3 className="para1">Search Any Neighborhood You Want!</h3>
+                  <p> Search any neighborhood you want locally or internationally.</p>
+                 </div>
+                   
+                   </div>
+
+                         <div className="super">
+                 <img className="wow" src={cooler} alt="cooler" />
+                 <div className="oj">
+                  <h3 className="para1">Save Your Comment About The Neighborhood!</h3>
+                  <p>Say whatever you want about the area.</p>
+                 </div>
+                   
+                   </div>
+
+
+                         <div className="super">
+                 <img className="wow" src={com7} alt="com7" />
+                 <div className="oj">
+                  <h3 className="para1">See Your Comment!</h3>
+                  <p>Find your comment by clicking the map icon and see what others have to say.</p>
+                 </div>
+                   
+                   </div>
 
              </div>
         )
