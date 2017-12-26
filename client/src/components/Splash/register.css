@@ -823,6 +823,22 @@ p {
       .register-form, .login-form {
       margin: 20px;
      }
+
+      .super{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 500px;
+      }
+      .para1 {
+        margin-left: 10px;
+        margin-right: 10px;
+        text-align: center;
+      }
+       .para2 {
+        margin-left: 10px;
+        margin-right: 10px;
+        text-align: center;
+      }
      /* .register-form, .login-form {
       margin: 50px;
      }*/
@@ -1095,6 +1111,8 @@ and (orientation:landscape){
         text-align: center;
       }
   }
+
+
    
 
 
