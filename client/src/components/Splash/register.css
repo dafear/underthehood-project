@@ -310,7 +310,7 @@ p {
        }
 
         .super{
-       /* display: flex;*/
+        display: flex;
         flex-direction: column-reverse;
         width: 200px;
       }
@@ -358,7 +358,7 @@ p {
        }
 
       .super{
-        /*display: flex;*/
+        display: flex;
         flex-direction: column-reverse;
         width: 500px;
       }
@@ -467,7 +467,7 @@ p {
       margin: 20px;
      }
          .super{
-       /* display: flex;*/
+        display: flex;
         flex-direction: column-reverse;
         width: 500px;
       }
@@ -513,7 +513,7 @@ p {
       margin: 20px;
      }
       .super{
-       /* display: flex;*/
+        display: flex;
         flex-direction: column-reverse;
         width: 200px;
       }
@@ -581,7 +581,7 @@ p {
       width: 100%;
      }
             .super{
-       /* display: flex;*/
+        display: flex;
         flex-direction: column-reverse;
         width: 500px;
       }
@@ -628,7 +628,7 @@ p {
       width: 100%;
      }
            .super{
-       /* display: flex;*/
+        display: flex;
         flex-direction: column-reverse;
         width: 200px;
       }
@@ -674,7 +674,7 @@ p {
       margin: 20px;
      }
            .super{
-        /*display: flex;*/
+        display: flex;
         flex-direction: column-reverse;
         width: 500px;
       }
@@ -721,7 +721,7 @@ p {
       margin: 20px;
      }
             .super{
-       /* display: flex;*/
+        display: flex;
         flex-direction: column-reverse;
         width: 500px;
       }
@@ -770,7 +770,7 @@ p {
      }
 
       .super{
-      /*  display: flex;*/
+        display: flex;
         flex-direction: column-reverse;
         width: 500px;
       }
@@ -982,7 +982,7 @@ p {
       margin: 20px;
      }
     .super{
-       /* display: flex;*/
+        display: flex;
         flex-direction: column-reverse;
         width: 500px;
       }
@@ -1021,24 +1021,7 @@ p {
       input {
       width: 100%;
      }
-     .register-form, .login-form {
-      margin: 20px;
-     }
-    .super{
-       /* display: flex;*/
-        flex-direction: column-reverse;
-        width: 500px;
-      }
-      .para1 {
-        margin-left: 10px;
-        margin-right: 10px;
-        text-align: center;
-      }
-       .para2 {
-        margin-left: 10px;
-        margin-right: 10px;
-        text-align: center;
-      }
+
       /*.register-form, .login-form {
       margin: 50px;
      }*/
@@ -1071,7 +1054,7 @@ and (orientation:landscape){
       margin: 20px;
      }
     .super{
-       /* display: flex;*/
+        display: flex;
         flex-direction: column-reverse;
         width: 500px;
       }
