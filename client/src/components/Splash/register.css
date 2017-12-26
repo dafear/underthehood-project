@@ -978,13 +978,25 @@ p {
       input {
       width: 100%;
      }
-     /* .register-form, .login-form {
-        z-index: 2;
-        position: relative;
-        border-width: 25px;
-        padding: 25px;
-      margin: 50px;
-     }*/
+     .register-form, .login-form {
+      margin: 20px;
+     }
+    .super{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 500px;
+      }
+      .para1 {
+        margin-left: 10px;
+        margin-right: 10px;
+        text-align: center;
+      }
+       .para2 {
+        margin-left: 10px;
+        margin-right: 10px;
+        text-align: center;
+      }
+    
 }
 @media only screen
   and (min-device-width: 736px)
@@ -1009,6 +1021,24 @@ p {
       input {
       width: 100%;
      }
+     .register-form, .login-form {
+      margin: 20px;
+     }
+    .super{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 500px;
+      }
+      .para1 {
+        margin-left: 10px;
+        margin-right: 10px;
+        text-align: center;
+      }
+       .para2 {
+        margin-left: 10px;
+        margin-right: 10px;
+        text-align: center;
+      }
       /*.register-form, .login-form {
       margin: 50px;
      }*/
